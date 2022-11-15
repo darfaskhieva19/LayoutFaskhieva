@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LayoutFaskhieva</string>
+    <string name="AppName">App Name</string>
+    <string name="Text">Lorem ipsum dolor sit amet, consectetur</string>
+    <string name="txtTeam"><font color ="#A469E2">Product of</font><font color="#8554B8"><b>Team Name</b></font></string>
+    <string name="Reg">Register</string>
+    <string name="FullName">Full Name</string>
+    <string name="EnterPhone">Enter Email / Phone Number</string>
+    <string name="tAgree">I agree with terms &amp; conditions</string>
+    <string name="tAlready"><font color ="#A469E2">Already registered ?Let’s </font><font color="#8554B8"><b>Login</b></font></string>
+</resources>

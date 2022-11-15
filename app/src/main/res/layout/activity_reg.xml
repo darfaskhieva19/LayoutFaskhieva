@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegActivity">
+
+    <TextView
+        android:id="@+id/txtReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/Reg"
+        android:textColor="@color/lavandaH"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Et_FullName"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/FullName"
+        android:textSize="14sp"
+        android:textColor="@color/lavandaH"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:background="@drawable/border_text"
+        app:layout_constraintTop_toBottomOf="@+id/txtReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/Et_Phone_Email"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/Reg"
+        android:textColor="@color/lavandaH"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:background="@drawable/border_text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_FullName"/>
+
+    <EditText
+        android:id="@+id/edPasswordReg"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColorHint="@color/lavandaH"
+        android:textSize="14sp"
+        android:background="@drawable/border_text"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_Phone_Email"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:textColorHint="@color/lavandaH"
+        android:hint="Confirm Password"
+        android:textSize="14sp"
+        android:background="@drawable/border_text"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPasswordReg" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="26dp"
+        android:button="@drawable/checkbox_designed"
+        android:padding="10dp"
+        android:text="@string/tAgree"
+        android:textColor="@color/lavandaT"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+    <android.widget.Button
+        android:id="@+id/btnReg"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:text="Register"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/lavandaH"
+        android:background="@drawable/color_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/txtOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textSize="14sp"
+        android:textColor="@color/lavandaH"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReg" />
+
+    <android.widget.Button
+        android:id="@+id/btnGOOGLE"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/color_btn"
+        android:text="GOOGLE"
+        android:textSize="14sp"
+        android:textColor="@color/lavandaH"
+        app:layout_constraintTop_toBottomOf="@+id/txtOR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnFACEBOOK" />
+
+    <android.widget.Button
+        android:id="@+id/btnFACEBOOK"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/color_btn"
+        android:text="FACEBOOK"
+        android:textColor="@color/lavandaH"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGOOGLE"
+        app:layout_constraintTop_toBottomOf="@+id/txtOR" />
+
+    <TextView
+        android:id="@+id/txtLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:text="@string/tAlready"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGOOGLE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFACEBOOK" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
