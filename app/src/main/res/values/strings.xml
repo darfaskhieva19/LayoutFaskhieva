@@ -2,10 +2,15 @@
     <string name="app_name">LayoutFaskhieva</string>
     <string name="AppName">App Name</string>
     <string name="Text">Lorem ipsum dolor sit amet, consectetur</string>
-    <string name="txtTeam"><font color ="#A469E2">Product of</font><font color="#8554B8"><b>Team Name</b></font></string>
+    <string name="txtTeam"><font color="#A469E2">Product of</font><font color="#8554B8"><b>Team Name</b></font></string>
     <string name="Reg">Register</string>
     <string name="FullName">Full Name</string>
     <string name="EnterPhone">Enter Email / Phone Number</string>
     <string name="tAgree">I agree with terms &amp; conditions</string>
-    <string name="tAlready"><font color ="#A469E2">Already registered ?Let’s </font><font color="#8554B8"><b>Login</b></font></string>
+    <string name="tAlready"><font color="#A469E2">Already registered ?Let’s </font><font color="#8554B8"><b>Login</b></font></string>
+    <string name="Account">Account Created\nSuccessfully</string>
+    <string name="Log">Log In</string>
+    <string name="ForgetPass">Forget Password?</string>
+    <string name="Remember">Remember Password</string>
+    <string name="HaveAccount"><font color="#A469E2">Dont’ have an account? Let’s  </font><font color="#8554B8"><b>Register</b></font></string>
 </resources>

@@ -4,54 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CongratsActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imCongrats"
+        android:layout_marginTop="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/txtAppName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gallery" />
+        app:srcCompat="@drawable/gallerys"
+        app:layout_constraintBottom_toTopOf="@+id/txtCongrats"/>
 
     <TextView
-        android:id="@+id/txtAppName"
+        android:id="@+id/txtCongrats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/AppName"
+        android:text="Congrats!"
+        android:layout_marginTop="28dp"
         android:textColor="@color/lavandaH"
         android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imCongrats"
+        app:layout_constraintBottom_toTopOf="@+id/txt"/>
 
     <TextView
         android:id="@+id/txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="20dp"
-        android:text="@string/Text"
+        android:text="@string/Account"
+        android:textAlignment="center"
         android:textSize="17sp"
         android:textColor="@color/lavandaT"
-        app:layout_constraintBottom_toTopOf="@+id/txtTeam"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAppName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCongrats" />
 
-    <TextView
-        android:id="@+id/txtTeam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txtTeam"
-        android:textSize="16sp"
+    <android.widget.Button
+        android:id="@+id/btnStart"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="80dp"
+        android:text="Get Started"
+        android:background="@drawable/border_background"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt" />
+        app:layout_constraintTop_toBottomOf="@+id/txt"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

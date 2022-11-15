@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegActivity">
+    tools:context=".LogActivity">
 
     <TextView
-        android:id="@+id/txtReg"
+        android:id="@+id/txtLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
-        android:text="@string/Reg"
+        android:text="@string/Log"
         android:textColor="@color/lavandaH"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -20,29 +20,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/Et_FullName"
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginTop="50dp"
-        android:text="@string/FullName"
-        android:textSize="14sp"
-        android:textColor="@color/lavandaH"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:background="@drawable/border_text"
-        app:layout_constraintTop_toBottomOf="@+id/txtReg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <EditText
         android:id="@+id/Et_Phone_Email"
         android:layout_width="350dp"
         android:layout_height="45dp"
         android:layout_marginStart="26dp"
         android:layout_marginEnd="26dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="100dp"
         android:text="@string/EnterPhone"
         android:textColor="@color/lavandaH"
         android:paddingLeft="25dp"
@@ -51,10 +34,10 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Et_FullName"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtLog"/>
 
     <EditText
-        android:id="@+id/edPasswordReg"
+        android:id="@+id/edPasswordLog"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"
@@ -72,51 +55,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Et_Phone_Email"/>
 
-    <EditText
-        android:id="@+id/editPassword"
-        android:layout_width="350dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:textColorHint="@color/lavandaH"
-        android:hint="Confirm Password"
+    <TextView
+        android:id="@+id/txtForget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/lavandaH"
         android:textSize="14sp"
-        android:background="@drawable/border_text"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:text="@string/ForgetPass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edPasswordReg" />
+        app:layout_constraintTop_toBottomOf="@+id/edPasswordLog" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chkBox"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="26dp"
         android:button="@drawable/checkbox_designed"
         android:padding="10dp"
-        android:text="@string/tAgree"
+        android:text="@string/Remember"
         android:textColor="@color/lavandaT"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/txtForget" />
 
     <android.widget.Button
-        android:id="@+id/btnReg"
+        android:id="@+id/btnLog"
         android:layout_width="360dp"
         android:layout_height="45dp"
         android:layout_marginBottom="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="47dp"
         android:layout_marginStart="26dp"
         android:layout_marginEnd="26dp"
-        android:text="Register"
+        android:text="Login"
         android:textSize="17sp"
         android:textStyle="bold"
         android:textColor="@color/lavandaH"
@@ -124,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/chkBox" />
 
     <TextView
         android:id="@+id/txtOR"
@@ -136,7 +113,7 @@
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnReg" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLog" />
 
     <android.widget.Button
         android:id="@+id/btnGOOGLE"
@@ -167,12 +144,12 @@
         app:layout_constraintTop_toBottomOf="@+id/txtOR" />
 
     <TextView
-        android:id="@+id/txtLog"
+        android:id="@+id/txtReg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
         android:layout_marginEnd="26dp"
-        android:text="@string/tAlready"
+        android:text="@string/HaveAccount"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
