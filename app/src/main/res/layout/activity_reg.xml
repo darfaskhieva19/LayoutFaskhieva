@@ -19,18 +19,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/txtReg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:text="@string/Reg"
-        android:textColor="@color/mainColor"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/txtReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/Reg"
+                android:textColor="@color/mainColor"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/Et_FullName"
+                />
 
     <EditText
         android:id="@+id/Et_FullName"
@@ -38,16 +40,16 @@
         android:layout_height="55dp"
         android:layout_marginStart="26dp"
         android:layout_marginEnd="26dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="@string/FullName"
         android:textSize="14sp"
         android:textColor="@color/mainColor"
         android:paddingLeft="25dp"
-        android:paddingRight="25dp"
         android:background="@drawable/border_text"
         app:layout_constraintTop_toBottomOf="@+id/txtReg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Et_Phone_Email"/>
 
     <EditText
         android:id="@+id/Et_Phone_Email"
@@ -59,12 +61,30 @@
         android:text="@string/EnterPhone"
         android:textColor="@color/mainColor"
         android:paddingLeft="25dp"
-        android:paddingRight="25dp"
         android:background="@drawable/border_text"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Et_FullName"/>
+        app:layout_constraintTop_toBottomOf="@+id/Et_FullName"
+        app:layout_constraintBottom_toTopOf="@+id/edPasswordReg"/>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="26dp"
+                android:text="@string/tAgree"
+                android:textColor="@color/forTxt"
+
+                android:textSize="14sp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editPassword"
+                app:layout_constraintBottom_toTopOf="@+id/btnReg"
+                />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edPasswordReg"
@@ -78,6 +98,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Et_Phone_Email"
+        app:layout_constraintBottom_toTopOf="@+id/editPassword"
         android:textColorHint="@color/forTxt">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@id/edPasswordReg"
@@ -105,6 +126,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edPasswordReg"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
         android:textColorHint="@color/forTxt">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@id/editPassword"
@@ -120,29 +142,12 @@
             tools:ignore="RtlSymmetry" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="26dp"
-        android:button="@drawable/checkbox_designed"
-        android:padding="10dp"
-        android:text="@string/tAgree"
-        android:textColor="@color/forTxt"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
-
     <android.widget.Button
         android:id="@+id/btnReg"
-        android:layout_width="360dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginBottom="32dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:layout_marginStart="26dp"
         android:layout_marginEnd="26dp"
         android:text="Register"
@@ -154,7 +159,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintBottom_toTopOf="@+id/txtOR"/>
 
     <TextView
         android:id="@+id/txtOR"
@@ -163,38 +169,39 @@
         android:text="OR"
         android:textSize="14sp"
         android:textColor="@color/mainColor"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnReg" />
 
-    <android.widget.Button
-        android:id="@+id/btnGOOGLE"
-        android:layout_width="165dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/color_btn"
-        android:text="GOOGLE"
-        android:textSize="14sp"
-        android:textColor="@color/mainColor"
-        app:layout_constraintTop_toBottomOf="@+id/txtOR"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnFACEBOOK" />
+            <android.widget.Button
+                android:id="@+id/btnGOOGLE"
+                android:layout_width="165dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/color_btn"
+                android:text="GOOGLE"
+                android:textColor="@color/mainColor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/btnFACEBOOK"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtOR" />
 
-    <android.widget.Button
-        android:id="@+id/btnFACEBOOK"
-        android:layout_width="165dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/color_btn"
-        android:text="FACEBOOK"
-        android:textColor="@color/mainColor"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnGOOGLE"
-        app:layout_constraintTop_toBottomOf="@+id/txtOR" />
+            <android.widget.Button
+                android:id="@+id/btnFACEBOOK"
+                android:layout_width="165dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="25sp"
+                android:background="@drawable/color_btn"
+                android:text="FACEBOOK"
+                android:textColor="@color/mainColor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnGOOGLE"
+                app:layout_constraintTop_toBottomOf="@+id/txtOR" />
 
     <TextView
         android:id="@+id/txtLog"
@@ -211,7 +218,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnGOOGLE"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFACEBOOK" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFACEBOOK"
+        />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

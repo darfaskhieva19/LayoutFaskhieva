@@ -7,8 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="mainColor">#706EFF</color>
-    <color name="forTxt">#6664FB</color>
-    <color name="forFields">#F1E9FF</color>
-    <color name="bottomTxt">#9176FF</color>
+    <color name="mainColor">#AD7FDC</color>
+    <color name="forTxt">#AB63F5</color>
+    <color name="forFields">#EBEBFD</color>
+    <color name="bottomTxt">#BC81F9</color>
 </resources>

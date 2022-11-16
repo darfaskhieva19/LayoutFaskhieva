@@ -13,8 +13,6 @@ import android.widget.TextView;
 public class LogActivity extends AppCompatActivity {
 
     private CheckBox checkBox;
-    Button log;
-    EditText email, pass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +20,6 @@ public class LogActivity extends AppCompatActivity {
         setContentView(R.layout.activity_log);
 
         checkBox = findViewById(R.id.chkBox);
-        log = findViewById(R.id.btnLog);
-        email = findViewById(R.id.Et_PhoneEmail);
-        pass = findViewById(R.id.edPasswordLog);
     }
 
     public void onRegister(View view) {
