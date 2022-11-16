@@ -6,22 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gallery"
         app:layout_constraintBottom_toTopOf="@+id/txtAppName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gallery" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/AppName"
-        android:textColor="@color/lavandaH"
+        android:textColor="@color/mainColor"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txt"
@@ -37,7 +38,7 @@
         android:layout_marginBottom="20dp"
         android:text="@string/Text"
         android:textSize="17sp"
-        android:textColor="@color/lavandaT"
+        android:textColor="@color/forTxt"
         app:layout_constraintBottom_toTopOf="@+id/txtTeam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
