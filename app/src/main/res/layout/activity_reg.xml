@@ -24,15 +24,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="45dp"
-                android:layout_marginLeft="30dp"
                 android:text="@string/Reg"
                 android:textColor="@color/mainColor"
                 android:textSize="40sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/Et_FullName"
-                />
+                app:layout_constraintStart_toStartOf="@+id/Et_FullName"
+                app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/Et_FullName"
