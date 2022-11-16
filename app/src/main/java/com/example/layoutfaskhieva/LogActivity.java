@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class LogActivity extends AppCompatActivity {
 
     private CheckBox checkBox;
-    Button reg;
+    Button log;
+    EditText email, pass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +22,9 @@ public class LogActivity extends AppCompatActivity {
         setContentView(R.layout.activity_log);
 
         checkBox = findViewById(R.id.chkBox);
-        reg = findViewById(R.id.btnLog);
+        log = findViewById(R.id.btnLog);
+        email = findViewById(R.id.Et_PhoneEmail);
+        pass = findViewById(R.id.edPasswordLog);
     }
 
     public void onRegister(View view) {

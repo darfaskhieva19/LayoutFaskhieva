@@ -150,6 +150,7 @@
         android:textStyle="bold"
         android:textColor="@color/mainColor"
         android:background="@drawable/color_btn"
+        android:onClick="onRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
